@@ -7,6 +7,7 @@
     - id
     - su
   expected: 百度一下，你就知道
+  case_name: 正确的用例断言
 - url: https://www.baidu.com
   input:
     - id
@@ -16,3 +17,4 @@
     - id
     - su
   expected: 百度一下
+  case_name: 错误的用例断言

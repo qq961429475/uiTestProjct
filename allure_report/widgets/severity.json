@@ -1,0 +1,51 @@
+[ {
+  "uid" : "7af3953107c28d81",
+  "name" : "百度搜索",
+  "time" : {
+    "start" : 1702982606158,
+    "stop" : 1702982607566,
+    "duration" : 1408
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54a1c16dca541401",
+  "name" : "test_01[data1]",
+  "time" : {
+    "start" : 1702982606154,
+    "stop" : 1702982606155,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78e046b36d2872a1",
+  "name" : "test_01[data0]",
+  "time" : {
+    "start" : 1702982606150,
+    "stop" : 1702982606151,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c3a7ad203078f9fe",
+  "name" : "test03",
+  "time" : {
+    "start" : 1702982608122,
+    "stop" : 1702982608123,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ceb94c267a79c7fe",
+  "name" : "百度搜索",
+  "time" : {
+    "start" : 1702982607569,
+    "stop" : 1702982607971,
+    "duration" : 402
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

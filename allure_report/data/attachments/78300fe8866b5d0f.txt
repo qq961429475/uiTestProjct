@@ -1,0 +1,2 @@
+开始测试
+{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好1111111'], 'click': ['id', 'su'], 'expected': '百度一下', 'case_name': '错误的用例断言'}

@@ -56,7 +56,7 @@ def send_listing(sender, receiver, _title, body):
 
 
 if __name__ == '__main__':
-    dirpath = os.path.dirname(os.path.dirname(__file__)) + '/report_allure'
+    dirpath = os.path.dirname(os.path.dirname(__file__)) + '/allure_report'
     outFullName = os.path.dirname(os.path.dirname(__file__)) + '/zipfile/report.zip'
     Compress.zip_dirs(dirpath, file_o=outFullName)
     print('>>>压缩文件成功！')

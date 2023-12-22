@@ -1,1 +1,0 @@
-{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好'], 'click': ['id', 'su'], 'expected': '百度一下，你就知道'}

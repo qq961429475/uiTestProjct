@@ -4,6 +4,17 @@ import pytest
 from selenium import webdriver
 
 
+def pytest_collection_modifyitems(items):
+    """
+    当ids用例别名乱码时,confest里加
+    测试用例收集完成时，将收集到的item的name和nodeid的中文显示在控制台上
+    @pytest.mark.parametrize("input_title,",testdata["test_article"],ids=["新增文章"])
+    """
+    for item in items:
+        item.name = item.name.encode("utf-8").decode("unicode_escape")
+        item._nodeid = item.nodeid.encode("utf-8").decode("unicode_escape")
+
+
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     """

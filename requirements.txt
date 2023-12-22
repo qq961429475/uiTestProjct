@@ -8,3 +8,6 @@ requests
 pymysql
 pytest-xdist
 openpyxl
+ddt
+xtestrunner
+jsonpath
