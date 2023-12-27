@@ -1,21 +1,21 @@
 {
-  "uid" : "78e046b36d2872a1",
-  "name" : "test_01[data0]",
+  "uid" : "2ad2f74e10166835",
+  "name" : "test_01[data1]",
   "fullName" : "test_case.test_case.TestLogin#test_01",
-  "historyId" : "684d814cf2bdd7d4c4fef5c4d839da7f",
+  "historyId" : "9dfc7ee03e51801eccc1ee0639086473",
   "time" : {
-    "start" : 1702982606150,
-    "stop" : 1702982606151,
-    "duration" : 1
+    "start" : 1703705752837,
+    "stop" : 1703705752837,
+    "duration" : 0
   },
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1702982602228,
-      "stop" : 1702982606150,
-      "duration" : 3922
+      "start" : 1703705740797,
+      "stop" : 1703705752829,
+      "duration" : 12032
     },
     "status" : "passed",
     "steps" : [ ],
@@ -30,11 +30,11 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "a960c6d3e8302128",
+      "uid" : "2272009f40d58f33",
       "name" : "stdout",
-      "source" : "a960c6d3e8302128.txt",
+      "source" : "2272009f40d58f33.txt",
       "type" : "text/plain",
-      "size" : 183
+      "size" : 175
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -45,9 +45,9 @@
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1702982608123,
-      "stop" : 1702982610228,
-      "duration" : 2105
+      "start" : 1703705755106,
+      "stop" : 1703705757242,
+      "duration" : 2136
     },
     "status" : "passed",
     "steps" : [ ],
@@ -72,7 +72,7 @@
     "value" : "DESKTOP-VMNO24F"
   }, {
     "name" : "thread",
-    "value" : "13172-MainThread"
+    "value" : "15156-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -88,7 +88,7 @@
   } ],
   "parameters" : [ {
     "name" : "data",
-    "value" : "{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好'], 'click': ['id', 'su'], 'expected': '百度一下，你就知道', 'case_name': '正确的用例断言'}"
+    "value" : "{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好1111111'], 'click': ['id', 'su'], 'expected': '百度一下', 'case_name': '错误的用例断言'}"
   } ],
   "links" : [ ],
   "hidden" : false,
@@ -99,6 +99,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "78e046b36d2872a1.json",
-  "parameterValues" : [ "{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好'], 'click': ['id', 'su'], 'expected': '百度一下，你就知道', 'case_name': '正确的用例断言'}" ]
+  "source" : "2ad2f74e10166835.json",
+  "parameterValues" : [ "{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好1111111'], 'click': ['id', 'su'], 'expected': '百度一下', 'case_name': '错误的用例断言'}" ]
 }

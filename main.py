@@ -30,4 +30,4 @@ if __name__ == '__main__':
     shutil.copy("environment.properties", "allure_result")
     os.system('allure generate ./allure_result/ -o ./allure_report/ --clean')
     tendency_data_operate()
-    os.system('allure open ./allure_report')
+    # os.system('allure open ./allure_report')

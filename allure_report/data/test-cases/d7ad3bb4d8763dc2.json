@@ -1,25 +1,25 @@
 {
-  "uid" : "ceb94c267a79c7fe",
+  "uid" : "d7ad3bb4d8763dc2",
   "name" : "百度搜索",
   "fullName" : "test_case.test_case.TestLogin#test_02",
   "historyId" : "913fa8f40fcc8d41d6296b3d35e2f4a9",
   "time" : {
-    "start" : 1702982607569,
-    "stop" : 1702982607971,
-    "duration" : 402
+    "start" : 1703705754307,
+    "stop" : 1703705754839,
+    "duration" : 532
   },
   "description" : "\n            百度搜索\n            :param browser:\n            :param data:\n            :return:\n        ",
   "descriptionHtml" : "<pre><code>        百度搜索\n        :param browser:\n        :param data:\n        :return:\n</code></pre>\n",
   "status" : "failed",
   "statusMessage" : "AssertionError: assert '百度一下，你就知道' == '百度一下'\n  - 百度一下\n  + 百度一下，你就知道",
-  "statusTrace" : "self = <test_case.test_case.TestLogin object at 0x000001C3705BCD10>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7e668bfc20ce39560b5096528c819263\")>\ndata = {'case_name': '错误的用例断言', 'click': ['id', 'su'], 'expected': '百度一下', 'input': ['id', 'kw', '你好1111111'], ...}\n\n    @allure.story('百度首页')\n    @allure.feature('搜索模块')\n    @allure.title('百度搜索')\n    @pytest.mark.parametrize('data', read_yaml('111.yaml'), ids=['case_name', 'case_name1'])\n    def test_02(self, browser, data):\n        \"\"\"\n            百度搜索\n            :param browser:\n            :param data:\n            :return:\n        \"\"\"\n        driver = bp(browser)\n        driver.visit(data['url'])\n        driver.input(*data['input'])\n        driver.click(*data['click'])\n>       assert driver.get_title() == data['expected']\nE       AssertionError: assert '百度一下，你就知道' == '百度一下'\nE         - 百度一下\nE         + 百度一下，你就知道\n\ntest_case\\test_case.py:32: AssertionError",
+  "statusTrace" : "self = <test_case.test_case.TestLogin object at 0x000002AA0CAC1730>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"f88608bb0512ac575568513439c7fbc3\")>\ndata = {'case_name': '错误的用例断言', 'click': ['id', 'su'], 'expected': '百度一下', 'input': ['id', 'kw', '你好1111111'], ...}\n\n    @allure.story('百度首页')\n    @allure.feature('搜索模块')\n    @allure.title('百度搜索')\n    @pytest.mark.parametrize('data', read_yaml('111.yaml'), ids=['case_name', 'case_name1'])\n    def test_02(self, browser, data):\n        \"\"\"\n            百度搜索\n            :param browser:\n            :param data:\n            :return:\n        \"\"\"\n        driver = bp(browser)\n        driver.visit(data['url'])\n        driver.input(*data['input'])\n        driver.click(*data['click'])\n>       assert driver.get_title() == data['expected']\nE       AssertionError: assert '百度一下，你就知道' == '百度一下'\nE         - 百度一下\nE         + 百度一下，你就知道\n\ntest_case\\test_case.py:32: AssertionError",
   "flaky" : false,
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1702982602228,
-      "stop" : 1702982606150,
-      "duration" : 3922
+      "start" : 1703705740797,
+      "stop" : 1703705752829,
+      "duration" : 12032
     },
     "status" : "passed",
     "steps" : [ ],
@@ -34,21 +34,21 @@
     "description" : "\n            百度搜索\n            :param browser:\n            :param data:\n            :return:\n        ",
     "status" : "failed",
     "statusMessage" : "AssertionError: assert '百度一下，你就知道' == '百度一下'\n  - 百度一下\n  + 百度一下，你就知道",
-    "statusTrace" : "self = <test_case.test_case.TestLogin object at 0x000001C3705BCD10>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7e668bfc20ce39560b5096528c819263\")>\ndata = {'case_name': '错误的用例断言', 'click': ['id', 'su'], 'expected': '百度一下', 'input': ['id', 'kw', '你好1111111'], ...}\n\n    @allure.story('百度首页')\n    @allure.feature('搜索模块')\n    @allure.title('百度搜索')\n    @pytest.mark.parametrize('data', read_yaml('111.yaml'), ids=['case_name', 'case_name1'])\n    def test_02(self, browser, data):\n        \"\"\"\n            百度搜索\n            :param browser:\n            :param data:\n            :return:\n        \"\"\"\n        driver = bp(browser)\n        driver.visit(data['url'])\n        driver.input(*data['input'])\n        driver.click(*data['click'])\n>       assert driver.get_title() == data['expected']\nE       AssertionError: assert '百度一下，你就知道' == '百度一下'\nE         - 百度一下\nE         + 百度一下，你就知道\n\ntest_case\\test_case.py:32: AssertionError",
+    "statusTrace" : "self = <test_case.test_case.TestLogin object at 0x000002AA0CAC1730>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"f88608bb0512ac575568513439c7fbc3\")>\ndata = {'case_name': '错误的用例断言', 'click': ['id', 'su'], 'expected': '百度一下', 'input': ['id', 'kw', '你好1111111'], ...}\n\n    @allure.story('百度首页')\n    @allure.feature('搜索模块')\n    @allure.title('百度搜索')\n    @pytest.mark.parametrize('data', read_yaml('111.yaml'), ids=['case_name', 'case_name1'])\n    def test_02(self, browser, data):\n        \"\"\"\n            百度搜索\n            :param browser:\n            :param data:\n            :return:\n        \"\"\"\n        driver = bp(browser)\n        driver.visit(data['url'])\n        driver.input(*data['input'])\n        driver.click(*data['click'])\n>       assert driver.get_title() == data['expected']\nE       AssertionError: assert '百度一下，你就知道' == '百度一下'\nE         - 百度一下\nE         + 百度一下，你就知道\n\ntest_case\\test_case.py:32: AssertionError",
     "steps" : [ {
       "name" : "输入文本",
       "time" : {
-        "start" : 1702982607803,
-        "stop" : 1702982607916,
-        "duration" : 113
+        "start" : 1703705754684,
+        "stop" : 1703705754787,
+        "duration" : 103
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "查找元素",
         "time" : {
-          "start" : 1702982607803,
-          "stop" : 1702982607839,
-          "duration" : 36
+          "start" : 1703705754684,
+          "stop" : 1703705754712,
+          "duration" : 28
         },
         "status" : "passed",
         "steps" : [ ],
@@ -83,17 +83,17 @@
     }, {
       "name" : "点击元素",
       "time" : {
-        "start" : 1702982607916,
-        "stop" : 1702982607966,
-        "duration" : 50
+        "start" : 1703705754787,
+        "stop" : 1703705754834,
+        "duration" : 47
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "查找元素",
         "time" : {
-          "start" : 1702982607916,
-          "stop" : 1702982607925,
-          "duration" : 9
+          "start" : 1703705754788,
+          "stop" : 1703705754800,
+          "duration" : 12
         },
         "status" : "passed",
         "steps" : [ ],
@@ -125,9 +125,9 @@
     }, {
       "name" : "获取网页title",
       "time" : {
-        "start" : 1702982607966,
-        "stop" : 1702982607971,
-        "duration" : 5
+        "start" : 1703705754834,
+        "stop" : 1703705754837,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -140,16 +140,16 @@
     }, {
       "name" : "添加失败截图。。。",
       "time" : {
-        "start" : 1702982608083,
-        "stop" : 1702982608119,
-        "duration" : 36
+        "start" : 1703705755056,
+        "stop" : 1703705755101,
+        "duration" : 45
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "100298c1c9decb40",
+        "uid" : "e42ec16e0bd93c70",
         "name" : "失败截图",
-        "source" : "100298c1c9decb40.png",
+        "source" : "e42ec16e0bd93c70.png",
         "type" : "image/png",
         "size" : 19306
       } ],
@@ -169,9 +169,9 @@
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1702982608123,
-      "stop" : 1702982610228,
-      "duration" : 2105
+      "start" : 1703705755106,
+      "stop" : 1703705757242,
+      "duration" : 2136
     },
     "status" : "passed",
     "steps" : [ ],
@@ -183,11 +183,11 @@
     "hasContent" : false
   } ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "搜索模块"
-  }, {
     "name" : "story",
     "value" : "百度首页"
+  }, {
+    "name" : "feature",
+    "value" : "搜索模块"
   }, {
     "name" : "parentSuite",
     "value" : "test_case"
@@ -202,7 +202,7 @@
     "value" : "DESKTOP-VMNO24F"
   }, {
     "name" : "thread",
-    "value" : "13172-MainThread"
+    "value" : "15156-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -233,6 +233,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "ceb94c267a79c7fe.json",
+  "source" : "d7ad3bb4d8763dc2.json",
   "parameterValues" : [ "{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好1111111'], 'click': ['id', 'su'], 'expected': '百度一下', 'case_name': '错误的用例断言'}" ]
 }

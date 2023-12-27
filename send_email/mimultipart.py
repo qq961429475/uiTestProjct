@@ -39,7 +39,7 @@ def send_listing(sender, receiver, _title, body):
     message['To'] = receiver
     message['Subject'] = _title
     message.attach(MIMEText(body))
-    with open("../zipfile/report.zip", 'rb') as f:
+    with open("./zipfile/report.zip", 'rb') as f:
         # 这里附件的MIME和文件名，这里是xls类型
         mime = MIMEBase('zip', 'zip')
         # 加上必要的头信息
@@ -57,12 +57,14 @@ def send_listing(sender, receiver, _title, body):
 
 if __name__ == '__main__':
     dirpath = os.path.dirname(os.path.dirname(__file__)) + '/allure_report'
-    outFullName = os.path.dirname(os.path.dirname(__file__)) + '/zipfile/report.zip'
+    print(dirpath)
+    outFullName = os.path.dirname(os.path.dirname(__file__)) + '/send_email/zipfile/report.zip'
+    print(outFullName)
     Compress.zip_dirs(dirpath, file_o=outFullName)
     print('>>>压缩文件成功！')
     title = '-------测试报告---------'
     messages = '你好，今天是个好日子'
     send_listing('wuggfox@foxmail.com', 'wuggfox@foxmail.com', title, messages)
     # os.remove(outFullName)
-    shutil.rmtree(r'../zipfile/')
-    print('>>>删除文件成功！')
+    # shutil.rmtree(r'../zipfile/')
+    # print('>>>删除文件成功！')
