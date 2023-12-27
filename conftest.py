@@ -4,6 +4,37 @@ import pytest
 from selenium import webdriver
 
 
+@pytest.fixture(scope="session", autouse=True)
+def browser():
+    """
+        全局定义浏览器启动
+    """
+    global driver
+    options = webdriver.ChromeOptions()
+    # 加载cookie
+    # options.add_argument(r"user-data-dir=C:\Users\96142\AppData\Local\Google\Chrome\User Data_Backup")
+    # 去掉密码管理弹窗
+    prefs = dict()
+    prefs["credentials_enable_services"] = False
+    prefs["profiles.password_manager_enabled"] = False
+    options.add_experimental_option('prefs', prefs)
+    # 最大化
+    options.add_argument("start-maximized")
+    # 无头模式：
+    options.add_argument('--headless')
+    # 去掉浏览器提示自动化黄条
+    options.add_experimental_option('useAutomationExtension', False)
+    # 禁用浏览器正在被自动化程序控制的提示
+    options.add_argument('--disable-infobars')
+    # 配置忽略HTTPS安全证书提示
+    options.add_argument("--ignore-certificate-errors")
+    driver = webdriver.Chrome(options=options)
+    driver.implicitly_wait(5)
+    yield driver
+    driver.quit()
+    print("test end!")
+
+
 def pytest_collection_modifyitems(items):
     """
     当ids用例别名乱码时,confest里加
@@ -37,34 +68,3 @@ def pytest_runtest_makereport(item, call):
             with allure.step("添加失败截图。。。"):
                 allure.attach(driver.get_screenshot_as_png(),
                               "失败截图", allure.attachment_type.PNG)
-
-
-@pytest.fixture(scope="session", autouse=True)
-def browser():
-    """
-        全局定义浏览器启动
-    """
-    global driver
-    options = webdriver.ChromeOptions()
-    # 加载cookie
-    # options.add_argument(r"user-data-dir=C:\Users\96142\AppData\Local\Google\Chrome\User Data_Backup")
-    # 去掉密码管理弹窗
-    prefs = dict()
-    prefs["credentials_enable_services"] = False
-    prefs["profiles.password_manager_enabled"] = False
-    options.add_experimental_option('prefs', prefs)
-    # 最大化
-    options.add_argument("start-maximized")
-    # 无头模式：
-    options.add_argument('--headless')
-    # 去掉浏览器提示自动化黄条
-    options.add_experimental_option('useAutomationExtension', False)
-    # 禁用浏览器正在被自动化程序控制的提示
-    options.add_argument('--disable-infobars')
-    # 配置忽略HTTPS安全证书提示
-    options.add_argument("--ignore-certificate-errors")
-    driver = webdriver.Chrome(options=options)
-    driver.implicitly_wait(5)
-    yield driver
-    driver.quit()
-    print("test end!")

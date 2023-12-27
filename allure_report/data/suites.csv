@@ -1,16 +1,16 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Dec 28 03:35:52 CST 2023","Thu Dec 28 03:35:54 CST 2023","1459","test_case","test_case","TestLogin","","","百度搜索","
+"passed","Thu Dec 28 03:56:53 CST 2023","Thu Dec 28 03:56:53 CST 2023","0","test_case","test_case","TestLogin","","","test03",""
+"failed","Thu Dec 28 03:56:53 CST 2023","Thu Dec 28 03:56:53 CST 2023","413","test_case","test_case","TestLogin","","","百度搜索","
             百度搜索
             :param browser:
             :param data:
             :return:
         "
-"failed","Thu Dec 28 03:35:54 CST 2023","Thu Dec 28 03:35:54 CST 2023","532","test_case","test_case","TestLogin","","","百度搜索","
+"passed","Thu Dec 28 03:56:51 CST 2023","Thu Dec 28 03:56:51 CST 2023","1","test_case","test_case","TestLogin","","","test_01[data0]",""
+"passed","Thu Dec 28 03:56:51 CST 2023","Thu Dec 28 03:56:51 CST 2023","0","test_case","test_case","TestLogin","","","test_01[data1]",""
+"passed","Thu Dec 28 03:56:51 CST 2023","Thu Dec 28 03:56:53 CST 2023","1327","test_case","test_case","TestLogin","","","百度搜索","
             百度搜索
             :param browser:
             :param data:
             :return:
         "
-"passed","Thu Dec 28 03:35:55 CST 2023","Thu Dec 28 03:35:55 CST 2023","0","test_case","test_case","TestLogin","","","test03",""
-"passed","Thu Dec 28 03:35:52 CST 2023","Thu Dec 28 03:35:52 CST 2023","0","test_case","test_case","TestLogin","","","test_01[data1]",""
-"passed","Thu Dec 28 03:35:52 CST 2023","Thu Dec 28 03:35:52 CST 2023","1","test_case","test_case","TestLogin","","","test_01[data0]",""
