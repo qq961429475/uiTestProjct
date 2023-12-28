@@ -38,6 +38,6 @@ class TestLogin():
 if __name__ == '__main__':
     # 不要加-s参数，allure将stdout输出到allure报告，加了只会输出到console 里
     # 用例执行步骤中会有一个stdout附件记录单个用例执行过程中的stdout
-    pytest.main(['-m', "test_case.py", "--alluredir", "./allure_result", "--clean-alluredir"])
-    os.system('allure generate ./allure_result/ -o ./allure_report/ --clean')
-    os.system('allure serve allure_result')
+    pytest.main(['-m', "test_case.py", "--alluredir", "./allure-results", "--clean-alluredir"])
+    os.system('allure generate ./allure-results/ -o ./allure_report/ --clean')
+    os.system('allure serve allure-results')

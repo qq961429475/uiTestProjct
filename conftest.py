@@ -29,7 +29,8 @@ def browser():
     options.add_argument('--disable-infobars')
     # 配置忽略HTTPS安全证书提示
     options.add_argument("--ignore-certificate-errors")
-    # --no-sandbox 参数来禁用沙盒模式
+    # --no-sandbox 参数来禁用沙盒模式（因为权限会报错） (The process started from chrome location /usr/bin/google-chrome is no longer
+    # running, so ChromeDriver is assuming that Chrome has crashed.)
     options.add_argument("--no-sandbox")
 
     driver = webdriver.Chrome(options=options)

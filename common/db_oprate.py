@@ -46,8 +46,8 @@ class OperateDB:
 if __name__ == '__main__':
     # select =my_db('db.ini','TEST_DB')
     # sql = 'select host,user from mysql.user f where user="root"'
-    # allure_result = select.select_query(sql)
-    # assert ('127.0.0.1', 'root') in allure_result
+    # allure-results = select.select_query(sql)
+    # assert ('127.0.0.1', 'root') in allure-results
     config = configparser.ConfigParser()
     config.read('../db.ini')
     host = config['TEST_DB']['host']

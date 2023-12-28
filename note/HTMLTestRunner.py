@@ -1,7 +1,7 @@
 # coding=utf-8
 """
 A TestRunner for use with the Python unit testing framework. It
-generates a HTML report to show the allure_result at a glance.
+generates a HTML report to show the allure-results at a glance.
 The simplest way to use this is to invoke its main method. E.g.
     import unittest
     import HTMLTestRunner
@@ -769,9 +769,9 @@ class _TestResult(TestResult):
         self.error_count = 0
         self.verbosity = verbosity
 
-        # allure_result is a list of allure_result in 4 tuple
+        # allure-results is a list of allure-results in 4 tuple
         # (
-        #   allure_result code (0: success; 1: fail; 2: error),
+        #   allure-results code (0: success; 1: fail; 2: error),
         #   TestCase object,
         #   Test output (byte string),
         #   stack trace,
@@ -1189,7 +1189,7 @@ class HTMLTestRunner(Template_mixin):
 class DirAndFiles(object):
 
     def __init__(self):
-        self.path = "../../allure_result/"
+        self.path = "../../allure-results/"
         self.title = "Test Report"
 
     def create_dir(self, title=None):
