@@ -9,6 +9,7 @@ def browser():
     """
         全局定义浏览器启动
     """
+
     global driver
     options = webdriver.ChromeOptions()
     # 加载cookie
@@ -28,6 +29,9 @@ def browser():
     options.add_argument('--disable-infobars')
     # 配置忽略HTTPS安全证书提示
     options.add_argument("--ignore-certificate-errors")
+    # --no-sandbox 参数来禁用沙盒模式
+    options.add_argument("--no-sandbox")
+
     driver = webdriver.Chrome(options=options)
     driver.implicitly_wait(5)
     yield driver

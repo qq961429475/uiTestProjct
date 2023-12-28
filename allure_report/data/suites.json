@@ -9,60 +9,60 @@
         "name" : "TestLogin",
         "children" : [ {
           "name" : "test_01[data0]",
-          "uid" : "266f87a5bf1d8f00",
+          "uid" : "fea06cce950c1a75",
           "parentUid" : "7938c800e5908aca4d12a01e01ce6391",
           "status" : "passed",
           "time" : {
-            "start" : 1703707011945,
-            "stop" : 1703707011946,
+            "start" : 1703719431119,
+            "stop" : 1703719431120,
             "duration" : 1
           },
           "flaky" : false,
           "parameters" : [ "{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好'], 'click': ['id', 'su'], 'expected': '百度一下，你就知道', 'case_name': '正确的用例断言'}" ]
         }, {
           "name" : "test_01[data1]",
-          "uid" : "d152a2f17789e049",
+          "uid" : "2624663badab47a6",
           "parentUid" : "7938c800e5908aca4d12a01e01ce6391",
           "status" : "passed",
           "time" : {
-            "start" : 1703707011951,
-            "stop" : 1703707011951,
-            "duration" : 0
+            "start" : 1703719431125,
+            "stop" : 1703719431126,
+            "duration" : 1
           },
           "flaky" : false,
           "parameters" : [ "{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好1111111'], 'click': ['id', 'su'], 'expected': '百度一下', 'case_name': '错误的用例断言'}" ]
         }, {
           "name" : "百度搜索",
-          "uid" : "25a84853bda0c7bf",
+          "uid" : "286fe3f4ca9529d2",
           "parentUid" : "7938c800e5908aca4d12a01e01ce6391",
           "status" : "passed",
           "time" : {
-            "start" : 1703707011956,
-            "stop" : 1703707013283,
-            "duration" : 1327
+            "start" : 1703719431130,
+            "stop" : 1703719432507,
+            "duration" : 1377
           },
           "flaky" : false,
           "parameters" : [ "{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好'], 'click': ['id', 'su'], 'expected': '百度一下，你就知道', 'case_name': '正确的用例断言'}" ]
         }, {
           "name" : "百度搜索",
-          "uid" : "18c6f503a7801a33",
+          "uid" : "11639ee698586c10",
           "parentUid" : "7938c800e5908aca4d12a01e01ce6391",
           "status" : "failed",
           "time" : {
-            "start" : 1703707013287,
-            "stop" : 1703707013700,
-            "duration" : 413
+            "start" : 1703719432511,
+            "stop" : 1703719432973,
+            "duration" : 462
           },
           "flaky" : false,
           "parameters" : [ "{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好1111111'], 'click': ['id', 'su'], 'expected': '百度一下', 'case_name': '错误的用例断言'}" ]
         }, {
           "name" : "test03",
-          "uid" : "d9a01c9fc6c322db",
+          "uid" : "b914b6659569117c",
           "parentUid" : "7938c800e5908aca4d12a01e01ce6391",
           "status" : "passed",
           "time" : {
-            "start" : 1703707013952,
-            "stop" : 1703707013952,
+            "start" : 1703719433204,
+            "stop" : 1703719433204,
             "duration" : 0
           },
           "flaky" : false,

@@ -7,13 +7,13 @@
       "name" : "AssertionError: assert '百度一下，你就知道' == '百度一下'\n  - 百度一下\n  + 百度一下，你就知道",
       "children" : [ {
         "name" : "百度搜索",
-        "uid" : "18c6f503a7801a33",
+        "uid" : "11639ee698586c10",
         "parentUid" : "57293d66e19e2cabcd183697647516f6",
         "status" : "failed",
         "time" : {
-          "start" : 1703707013287,
-          "stop" : 1703707013700,
-          "duration" : 413
+          "start" : 1703719432511,
+          "stop" : 1703719432973,
+          "duration" : 462
         },
         "flaky" : false,
         "parameters" : [ "{'url': 'https://www.baidu.com', 'input': ['id', 'kw', '你好1111111'], 'click': ['id', 'su'], 'expected': '百度一下', 'case_name': '错误的用例断言'}" ]
